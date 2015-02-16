@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!.env/bin/python
 
 ####
 # Script concieved to manage Dell R620/630 rack servers,
@@ -6,7 +6,7 @@
 
 # To do:
 # 1. Implemet reading IPs and maybe creds from yaml config file
-# 2. Implement 'pexpect' module
+# 2. Implement 'pexpect' module (Done)
 # find example here -
 # http://linux.byexamples.com/archives/346/python-how-to-access-ssh-with-pexpect/
 #
