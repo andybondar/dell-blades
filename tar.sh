@@ -17,11 +17,10 @@ done
 
 echo '#!/bin/bash' > venv.sh
 echo 'wd=`pwd`' >> venv.sh
-echo 'arr=($(grep $wd/.env $wd/.env/bin/* | awk -F":" '\''{print $1}'\''))' >> venv.sh
+echo 'arr=($(grep /home/virtualenv/dell-blades/.env $wd/.env/bin/* | awk -F":" '\''{print $1}'\''))' >> venv.sh
 echo 'for i in ${arr[@]};' >> venv.sh
 echo ' do sed -i s,/home/virtualenv/dell-blades,$wd,g $i' >> venv.sh
 echo 'done' >> venv.sh
-echo 'source .env/bin/activate' >> venv.sh
 
 chmod 755 venv.sh
 
